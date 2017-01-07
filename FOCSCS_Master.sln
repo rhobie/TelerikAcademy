@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FOCSCS_Master", "FOCSCS_Master\FOCSCS_Master.csproj", "{B3A1ACCB-0215-4E1F-928A-82C04E9F6EFF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B3A1ACCB-0215-4E1F-928A-82C04E9F6EFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3A1ACCB-0215-4E1F-928A-82C04E9F6EFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3A1ACCB-0215-4E1F-928A-82C04E9F6EFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3A1ACCB-0215-4E1F-928A-82C04E9F6EFF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
