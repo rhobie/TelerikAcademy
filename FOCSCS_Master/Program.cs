@@ -16,11 +16,11 @@ namespace FOCSCS_Master
 
             //Chap01.RunChap01(); //Intoroduction To Programming              //COMPLETE    14/14 - need to get decompiler and change ex14
             //Chap02.RunChap02(); //Primitive Types and Variables             //COMPLETE    13/13
-            //Chap03.RunChap03(); //OperatorsAndExpressions                   //INCOMPLETE  9/16
-            //Chap04.RunChap04(); //Console Input and Output                  //INCOMPLETE  3/12 -not started  
-            //Chap05.RunChap05(); //Conditional Statements                    //INCOMPLETE  6/11 -started
+            //Chap03.RunChap03(); //OperatorsAndExpressions                   //INCOMPLETE  12/16 - rest is bit operaters/shifting etc, will come back to this
+            //Chap04.RunChap04(); //Console Input and Output                  //COMPLETE    12/12  
+            //Chap05.RunChap05(); //Conditional Statements                    //INCOMPLETE  9/11 -started
             //Chap06.RunChap06(); //Loops                                     //INCOMPLETE  13/18 - coefficents etc :s
-            //Chap07.RunChap07(); //Arrays                                    //INCOMPLETE  0/25 -not started
+            Chap07.RunChap07(); //Arrays                                    //INCOMPLETE  5/25 -started (one incomplete solution (#5))
             //Chap08.RunChap08(); //Numeral Systems                           //INCOMPLETE  0/15 -not started
             //Chap09.RunChap09(); //Methods                                   //INCOMPLETE  7/13 -started (one incorrect (#8))
             //Chap10.RunChap10(); //Recursion                                 //INCOMPLETE  0/14 -not started
@@ -28,7 +28,7 @@ namespace FOCSCS_Master
             //Chap12.RunChap12(); //Exception Handling                        //INCOMPLETE  0/13 -not started
             //Chap13.RunChap13(); //Strings And Text Processing               //INCOMPLETE  0/26 -not started
             //Chap14.RunChap14(); //Defining Classes                          //INCOMPLETE  ?/?  -started
-            //Chap14.RunChap15(); //Text Files                                //INCOMPLETE  3/?  -started (working from home
+            //Chap14.RunChap15(); //Text Files                                //INCOMPLETE  4/13 -started
             //Chap16.RunChap16(); //Linear Data Structures                    //INCOMPLETE  11ish/18
 
             //Chap17.RunChap17(); //Trees And Graphs                          //NOT UP TO YET
@@ -131,7 +131,7 @@ namespace FOCSCS_Master
             ////3. Write an expression that looks for a given integer if its third digit (right to left) is 7.
             //Chap03_OperatorsAndExpressions.Three.RunThree(); //COMPLETE
             ////4. Write an expression that checks whether the third bit in a given integer is 1 or 0.
-            //Chap03_OperatorsAndExpressions.Four.RunFour();
+            //Chap03_OperatorsAndExpressions.Four.RunFour(); //COMPLETE
             ////5. Write an expression that calculates the area of a trapezoid by given sides a, b and height h.
             //Chap03_OperatorsAndExpressions.Five.RunFive(); //COMPLETE
             ////6. Write a program that prints on the console the perimeter and the area of a rectangle by given side and height entered by the user.
@@ -149,11 +149,11 @@ namespace FOCSCS_Master
             //    //- Exchanges the second and the third digits: acbd (in our example 2101).
             //Chap03_OperatorsAndExpressions.Ten.RunTen(); //COMPLETE
             ////11. We are given a number n and a position p. Write a sequence of operations that prints the value of the bit on the position p in the number (0 or 1). Example: n=35, p=5 -> 1. Another example: n=35, p=6 -> 0.
-            //Chap03_OperatorsAndExpressions.Eleven.RunEleven();
+            //Chap03_OperatorsAndExpressions.Eleven.RunEleven(); //COMPLETE
             ////12. Write a Boolean expression that checks if the bit on position p in the integer v has the value 1. Example v=5, p=1 -> false.
-            //Chap03_OperatorsAndExpressions.Twelve.RunTwelve();
+            //Chap03_OperatorsAndExpressions.Twelve.RunTwelve(); //COMPLETE
             ////13. We are given the number n, the value v (v = 0 or 1) and the position p. write a sequence of operations that changes the value of n, so the bit on the position p has the value of v. Example: n=35, p=5, v=0 -> n=3. Another example: n=35, p=2, v=1 -> n=39.
-            //Chap03_OperatorsAndExpressions.Thirteen.RunThirteen();
+            Chap03_OperatorsAndExpressions.Thirteen.RunThirteen();
             ////14. Write a program that checks if a given number n (1 < n < 100) is a prime number (i.e. it is divisible without remainder only to itself and 1).
             //Chap03_OperatorsAndExpressions.Fourteen.RunFourteen();
             ////15. * Write a program that exchanges the values of the bits on positions 3, 4 and 5 with bits on positions 24, 25 and 26 of a given 32-bit unsigned integer.
@@ -161,7 +161,7 @@ namespace FOCSCS_Master
             ////16. * Write a program that exchanges bits {p, p+1, …, p+k-1} with bits {q, q+1, …, q+k-1} of a given 32-bit unsigned integer.
             //Chap03_OperatorsAndExpressions.Sixteen.RunSixteen();
 
-            Console.WriteLine("CHAPTER 3 INCOMPLETE 6/16");
+            Console.WriteLine("CHAPTER 3 INCOMPLETE 12/16");
         }
     }
 
@@ -169,34 +169,32 @@ namespace FOCSCS_Master
     {
         public static void RunChap04()
         {
-            //NOT STARTED
+            //1. Write a program that reads from the console three numbers of type int and prints their sum.
+            Chap04_ConsoleInputAndOutput.One.RunOne(); //COMPLETE
+            //2. Write a program that reads from the console the radius "r" of a circle and prints its perimeter and area.
+            Chap04_ConsoleInputAndOutput.Two.RunTwo(); //COMPLETE
+            //3. A given company has name, address, phone number, fax number, web site and manager. The manager has name, surname and phone number. Write a program that reads information about the company and its manager and then prints it on the console.
+            Chap04_ConsoleInputAndOutput.Three.RunThree(); //COMPLETE
+            //4. Write a program that prints three numbers in three virtual columns on the console. Each column should have a width of 10 characters and the numbers should be left aligned. The first number should be an integer in hexadecimal; the second should be fractional positive; and the third – a negative fraction. The last two numbers have to be rounded to the second decimal place.
+            Chap04_ConsoleInputAndOutput.Four.RunFour(); //COMPLETE
+            //5. Write a program that reads from the console two integer numbers (int) and prints how many numbers between them exist, such that the remainder of their division by 5 is 0. Example: in the range (14, 25) there are 3 such numbers: 15, 20 and 25.
+            Chap04_ConsoleInputAndOutput.Five.RunFive(); //COMPLETE
+            //6. Write a program that reads two numbers from the console and prints the greater of them. Solve the problem without using conditional statements.
+            Chap04_ConsoleInputAndOutput.Six.RunSix(); //COMPLETE
+            //7. Write a program that reads five integer numbers and prints their sum. If an invalid number is entered the program should prompt the user to enter another number.
+            Chap04_ConsoleInputAndOutput.Seven.RunSeven(); //COMPLETE
+            //8. Write a program that reads five numbers from the console and prints the greatest of them.
+            Chap04_ConsoleInputAndOutput.Eight.RunEight(); //COMPLETE
+            //9. Write a program that reads an integer number n from the console. After that reads n numbers from the console and prints their sum.
+            Chap04_ConsoleInputAndOutput.Nine.RunNine(); //COMPLETE
+            //10. Write a program that reads an integer number n from the console and prints all numbers in the range [1…n], each on a separate line.
+            Chap04_ConsoleInputAndOutput.Ten.RunTen(); //COMPLETE
+            //11. Write a program that prints on the console the first 100 numbers in the Fibonacci sequence: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, …
+            Chap04_ConsoleInputAndOutput.Eleven.RunEleven(); //COMPLETE
+            //12. Write a program that calculates the sum (with precision of 0.001) of the following sequence: 1 + 1/2 - 1/3 + 1/4 - 1/5 + …
+            Chap04_ConsoleInputAndOutput.Twelve.RunTwelve(); //COMPLETE
 
-            ////1. Write a program that reads from the console three numbers of type int and prints their sum.
-            //Chap04_ConsoleInputAndOutput.One.RunOne(); //COMPLETE
-            ////2. Write a program that reads from the console the radius "r" of a circle and prints its perimeter and area.
-            //Chap04_ConsoleInputAndOutput.Two.RunTwo(); //COMPLETE
-            ////3. A given company has name, address, phone number, fax number, web site and manager. The manager has name, surname and phone number. Write a program that reads information about the company and its manager and then prints it on the console.
-            //Chap04_ConsoleInputAndOutput.Three.RunThree(); //COMPLETE
-            ////4. Write a program that prints three numbers in three virtual columns on the console. Each column should have a width of 10 characters and the numbers should be left aligned. The first number should be an integer in hexadecimal; the second should be fractional positive; and the third – a negative fraction. The last two numbers have to be rounded to the second decimal place.
-            //Chap04_ConsoleInputAndOutput.Four.RunFour(); 
-            ////5. Write a program that reads from the console two integer numbers (int) and prints how many numbers between them exist, such that the remainder of their division by 5 is 0. Example: in the range (14, 25) there are 3 such numbers: 15, 20 and 25.
-            //Chap04_ConsoleInputAndOutput.Five.RunFive();
-            ////6. Write a program that reads two numbers from the console and prints the greater of them. Solve the problem without using conditional statements.
-            //Chap04_ConsoleInputAndOutput.Six.RunSix();
-            ////7. Write a program that reads five integer numbers and prints their sum. If an invalid number is entered the program should prompt the user to enter another number.
-            //Chap04_ConsoleInputAndOutput.Seven.RunSeven();
-            ////8. Write a program that reads five numbers from the console and prints the greatest of them.
-            //Chap04_ConsoleInputAndOutput.Eight.RunEight();
-            ////9. Write a program that reads an integer number n from the console. After that reads n numbers from the console and prints their sum.
-            //Chap04_ConsoleInputAndOutput.Nine.RunNine();
-            ////10. Write a program that reads an integer number n from the console and prints all numbers in the range [1…n], each on a separate line.
-            //Chap04_ConsoleInputAndOutput.Ten.RunTen();
-            ////11. Write a program that prints on the console the first 100 numbers in the Fibonacci sequence: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, …
-            //Chap04_ConsoleInputAndOutput.Eleven.RunEleven();
-            ////12. Write a program that calculates the sum (with precision of 0.001) of the following sequence: 1 + 1/2 - 1/3 + 1/4 - 1/5 + …
-            //Chap04_ConsoleInputAndOutput.Twelve.RunTwelve();
-
-            Console.WriteLine("CHAPTER 4 INCOMPLETE 4/12");
+            Console.WriteLine("CHAPTER 4 COMPLETED 12/12");
         }
 
     }
@@ -205,7 +203,6 @@ namespace FOCSCS_Master
     {
         public static void RunChap05()
         {
-            //NOT STARTED
 
             ////1. Write an if-statement that takes two integer variables and exchanges their values if the first one is greater than the second one.
             //Chap05_ConditionalStatements.One.RunOne(); //COMPLETE
@@ -218,21 +215,21 @@ namespace FOCSCS_Master
             ////5. Write a program that asks for a digit (0-9), and depending on the input, shows the digit as a word (in English). Use a switch statement.
             //Chap05_ConditionalStatements.Five.RunFive(); //COMPLETE
             ////6. Write a program that gets the coefficients a, b and c of a quadratic equation: ax2 + bx + c, calculates and prints its real roots (if they exist). Quadratic equations may have 0, 1 or 2 real roots.
-            //Chap05_ConditionalStatements.Six.RunSix(); //INCOMPLETE!!!
+            //Chap05_ConditionalStatements.Six.RunSix(); //INCOMPLETE!!! (co-efficents)
             ////7. Write a program that finds the greatest of given 5 numbers.
             //Chap05_ConditionalStatements.Seven.RunSeven(); //CORRECT
             ////8. Write a program that, depending on the user’s choice, inputs int, double or string variable. If the variable is int or double, the program increases it by 1. If the variable is a string, the program appends "*" at the end. Print the result at the console. Use switch statement.
-            //Chap05_ConditionalStatements.Eight.RunEight(); //STARTED - not finished
+            //Chap05_ConditionalStatements.Eight.RunEight(); //CORRECT (i think, not sure I understand the question correctly)
             ////9. We are given 5 integer numbers. Write a program that finds those subsets whose sum is 0. Examples:
             ////- If we are given the numbers {3, -2, 1, 1, 8}, the sum of -2, 1 and 1 is 0.
             ////- If we are given the numbers {3, 1, -7, 35, 22}, there are no subsets with sum 0.
-            //Chap05_ConditionalStatements.Nine.RunNine();
+            //Chap05_ConditionalStatements.Nine.RunNine(); // HAVE NOT STARTED
             ////10. Write a program that applies bonus points to given scores in the range [1…9] by the following rules:
             ////- If the score is between 1 and 3, the program multiplies it by 10.
             ////- If the score is between 4 and 6, the program multiplies it by 100.
             ////- If the score is between 7 and 9, the program multiplies it by 1000.
             ////- If the score is 0 or more than 9, the program prints an error message.
-            //Chap05_ConditionalStatements.Ten.RunTen();
+            //Chap05_ConditionalStatements.Ten.RunTen(); //COMPLETE
             ////11. * Write a program that converts a number in the range [0…999] to words, corresponding to the English pronunciation. Examples:
             ////- 0 --> "Zero"
             ////- 12 --> "Twelve"
@@ -241,9 +238,9 @@ namespace FOCSCS_Master
             ////- 400 --> "Four hundred"
             ////- 501 --> "Five hundred and one"
             ////- 711 --> "Seven hundred and eleven"
-            //Chap05_ConditionalStatements.Eleven.RunEleven();
+            //Chap05_ConditionalStatements.Eleven.RunEleven(); //CORRECT
 
-            Console.WriteLine("CHAPTER 5 INCOMPLETE 6/11, -#6 incomplete");
+            Console.WriteLine("CHAPTER 5 INCOMPLETE 9/11, (#6 && #9 incomplete)");
         }
 
     }
@@ -318,19 +315,19 @@ namespace FOCSCS_Master
         public static void RunChap07()
         {
             ////1. Write a program, which creates an array of 20 elements of type integer and initializes each of the elements with a value equals to the index of the element multiplied by 5. Print the elements to the console.
-            //Chap07_Arrays.One.RunOne();
+            //Chap07_Arrays.One.RunOne(); //COMPLETE
             
             ////2. Write a program, which reads two arrays from the console and checks whether they are equal (two arrays are equal when they are of equal length and all of their elements, which have the same index, are equal).
-            //Chap07_Arrays.Two.RunTwo();
+            //Chap07_Arrays.Two.RunTwo(); //COMPLETE
             
             ////3. Write a program, which compares two arrays of type char lexicographically (character by character) and checks, which one is first in the lexicographical order.
-            //Chap07_Arrays.Three.RunThree();
+            //Chap07_Arrays.Three.RunThree(); //COMPLETE
             
             ////4. Write a program, which finds the maximal sequence of consecutive equal elements in an array. E.g.: {1, 1, 2, 3, 2, 2, 2, 1} -> {2, 2, 2}.
-            //Chap07_Arrays.Four.RunFour();
+            //Chap07_Arrays.Four.RunFour(); //COMPLETE
             
             ////5. Write a program, which finds the maximal sequence of consecutively placed increasing integers. Example: {3, 2, 3, 4, 2, 2, 4} -> {2, 3, 4}.
-            //Chap07_Arrays.Five.RunFive();
+            //Chap07_Arrays.Five.RunFive(); //HALF COMPLETE, needs adjusting
             
             ////6. Write a program, which finds the maximal sequence of increasing elements in an array arr[n]. It is not necessary the elements to be consecutively placed. E.g.: {9, 6, 2, 7, 4, 7, 6, 5, 8, 4} -> {2, 4, 6, 8}.
             //Chap07_Arrays.Six.RunSix();
@@ -339,7 +336,7 @@ namespace FOCSCS_Master
             //Chap07_Arrays.Seven.RunSeven();
             
             ////8. Sorting an array means to arrange its elements in an increasing (or decreasing) order. Write a program, which sorts an array using the algorithm "selection sort".
-            //Chap07_Arrays.Eight.RunEight();
+            Chap07_Arrays.Eight.RunEight();
             
             ////9. Write a program, which finds a subsequence of numbers with maximal sum. E.g.: {2, 3, -6, -1, 2, -1, 6, 4, -8, 8} -> 11
             //Chap07_Arrays.Nine.RunNine();
@@ -421,51 +418,51 @@ namespace FOCSCS_Master
             //NOT STARTED
 
             //1. Convert the numbers 151, 35, 43, 251, 1023 and 1024 to the binary numeral system.
-            Chap08_NumeralSystems.
+            Chap08_NumeralSystems.One.RunOne();
             
             //2. Convert the number 1111010110011110(2) to hexadecimal and decimal numeral systems.
-            Chap08_NumeralSystems.
+            Chap08_NumeralSystems.Two.RunTwo();
             
             //3. Convert the hexadecimal numbers FA, 2A3E, FFFF, 5A0E9 to binary and decimal numeral systems.
-            Chap08_NumeralSystems.
+            Chap08_NumeralSystems.Three.RunThree();
             
             //4. Write a program that converts a decimal number to binary one.
-            Chap08_NumeralSystems.
+            Chap08_NumeralSystems.Four.RunFour();
             
             //5. Write a program that converts a binary number to decimal one.
-            Chap08_NumeralSystems.
+            Chap08_NumeralSystems.Five.RunFive();
             
             //6. Write a program that converts a decimal number to hexadecimal one.
-            Chap08_NumeralSystems.
+            Chap08_NumeralSystems.Six.RunSix();
             
             //7. Write a program that converts a hexadecimal number to decimal one.
-            Chap08_NumeralSystems.
+            Chap08_NumeralSystems.Seven.RunSeven();
             
             //8. Write a program that converts a hexadecimal number to binary one.
-            Chap08_NumeralSystems.
+            Chap08_NumeralSystems.Eight.RunEight();
             
             //9. Write a program that converts a binary number to hexadecimal one.
-            Chap08_NumeralSystems.
+            Chap08_NumeralSystems.Nine.RunNine();
             
             //10. Write a program that converts a binary number to decimal using the Horner scheme.
-            Chap08_NumeralSystems.
+            Chap08_NumeralSystems.Ten.RunTen();
             
             //11. Write a program that converts Roman digits to Arabic ones.
-            Chap08_NumeralSystems.
+            Chap08_NumeralSystems.Eleven.RunEleven();
             
             //12. Write a program that converts Arabic digits to Roman ones.
-            Chap08_NumeralSystems.
+            Chap08_NumeralSystems.Twelve.RunTwelve();
             
             //13. Write a program that by given N, S, D (2 ≤ S, D ≤ 16) converts the number N from an S-based numeral system to a D based numeral system.
-            Chap08_NumeralSystems.
+            Chap08_NumeralSystems.Thirteen.RunThirteen();
             
             //14. Try adding up 50,000,000 times the number 0.000001. Use a loop and addition (not direct multiplication). Try it with float and double and after that with decimal. Do you notice the huge difference in the results and speed of calculation? Explain what happens.
-            Chap08_NumeralSystems.
+            Chap08_NumeralSystems.Fourteen.RunFourteen();
             
             //15. * Write a program that prints the value of the mantissa, the sign of the mantissa and exponent in
             //float numbers (32-bit numbers with a floating-point according to the IEEE 754 standard). Example: for the number -27.25 should be printed: sign = 1,
             //exponent = 10000011, mantissa = 10110100000000000000000.
-            Chap08_NumeralSystems.
+            Chap08_NumeralSystems.Fifteen.RunFifteen();
 
         }
 
@@ -519,7 +516,7 @@ namespace FOCSCS_Master
         public static void RunChap10()
         {
             //1. Write a program to simulate n nested loops from 1 to n.
-            
+            Chap10_Recursion.One.RunOne();
             
             //2. Write a program to generate all variations with duplicates of n elements class k. Sample input:
             //n = 3
@@ -527,7 +524,7 @@ namespace FOCSCS_Master
             //Sample output:
             //(1 1), (1 2), (1 3), (2 1), (2 2), (2 3), (3 1), (3 2), (3 3)
             //Think about and implement an iterative algorithm for the same task.
-            
+            Chap10_Recursion.Two.RunTwo();
             
             //3. Write a program to generate and print all combinations with duplicates of k elements from a set with n elements. Sample input:
             //Chapter 10. Recursion 379
@@ -536,7 +533,7 @@ namespace FOCSCS_Master
             //Sample output:
             //(1 1), (1 2), (1 3), (2 2), (2 3), (3 3)
             //Think about and implement an iterative algorithm for the same task.
-            
+            Chap10_Recursion.Three.RunThree();
             
             //4. You are given a set of strings. Write a recursive program, which generates all subsets, consisting exactly k strings chosen among the elements of this set. Sample input:
             //strings = {'test', 'rock', 'fun'}
@@ -544,7 +541,7 @@ namespace FOCSCS_Master
             //Sample output:
             //(test rock), (test fun), (rock fun)
             //Think about and implement an iterative algorithm as well.
-            
+            Chap10_Recursion.Four.RunFour();
             
             //5. Write a recursive program, which prints all subsets of a given set of N words. Example input:
             //words = {'test', 'rock', 'fun'}
@@ -552,38 +549,38 @@ namespace FOCSCS_Master
             //(), (test), (rock), (fun), (test rock), (test fun),
             //(rock fun), (test rock fun)
             //Think about and implement an iterative algorithm for the same task.
-            
+            Chap10_Recursion.Five.RunFive();
             
             //6. Implement the merge-sort algorithm recursively. In it the initial array is divided into two equal in size parts, which are sorted (recursively via merge-sort) and after that the two sorted parts are merged in order to get the whole sorted array.
-            
+            Chap10_Recursion.Six.RunSix();
             
             //7. Write a recursive program, which generates and prints all permutations of the numbers 1, 2, …, n, for a given integer n. Example input:
             //n = 3
             //Example output:
             //(1, 2, 3), (1, 3, 2), (2, 1, 3), (2, 3, 1), (3, 1, 2), (3, 2, 1)
             //Try to find an iterative solution for generating permutations.
-            
+            Chap10_Recursion.Seven.RunSeven();
             
             //8. You are given an array of integers and a number N. Write a recursive program that finds all subsets of numbers in the array, which have a sum N. For example, if we have the array {2, 3, 1, -1} and N=4, we can obtain N=4 as a sum in the following two ways: 4=2+3-1; 4=3+1.
-            
+            Chap10_Recursion.Eight.RunEight();
             
             //9. You are given an array of positive integers. Write a program that checks whether there is one or more numbers in the array (subset), whose sum is equal to S. Can you solve the task efficiently for large arrays?
-            
+            Chap10_Recursion.Nine.RunNine();
             
             //10. You are given a matrix with passable and impassable cells. Write a recursive program that finds all paths between two cells in the matrix.
-            
+            Chap10_Recursion.Ten.RunTen();
             
             //11. Implement the algorithm BFS (breadth-first search) for finding the shortest path in a labyrinth.
-            
+            Chap10_Recursion.Eleven.RunEleven();
             
             //12. Modify the previous program to check whether a path exists between two cells without finding all possible paths. Test the program with a matrix 100x100 filled only with passable cells.
-            
+            Chap10_Recursion.Twelve.RunTwelve();
             
             //13. You are given a matrix with passable and impassable cells. Write a program that finds the largest area of neighboring passable cells.
-            
+            Chap10_Recursion.Thirteen.RunThirteen();
             
             //14. Write a recursive program that traverses the whole hard disk C:\ recursively and prints all folders and files.
-
+            Chap10_Recursion.Fourteen.RunFourteen();
 
         }
 
@@ -747,7 +744,19 @@ namespace FOCSCS_Master
     {
         public static void RunChap15()
         {
-
+            //Chap15_TextFiles.One.RunOne();            //CORRECT
+            //Chap15_TextFiles.Two.RunTwo();            //CORRECT
+            //Chap15_TextFiles.Three.RunThree();        //CORRECT
+            //Chap15_TextFiles.Four.RunFour();          //CORRECT
+            Chap15_TextFiles.Five.RunFive();          //started
+            //Chap15_TextFiles.Six.RunSix();            //not started
+            //Chap15_TextFiles.Seven.RunSeven();/       //not started
+            //Chap15_TextFiles.Eight.RunEight();        //not started
+            //Chap15_TextFiles.Nine.RunNine();          //not started
+            //Chap15_TextFiles.Ten.RunTen();            //not started
+            //Chap15_TextFiles.Eleven.RunEleven();      //not started
+            //Chap15_TextFiles.Twelve.RunTwelve();      //not started
+            //Chap15_TextFiles.Thirteen.RunThirteen();  //not started
         }
 
     }
@@ -770,12 +779,12 @@ namespace FOCSCS_Master
             //Chap16_LinearDataStructures.Ten.RunTen();             //COMPLETE - think this is correct?? - probabaly not..
             //Chap16_LinearDataStructures.Eleven.RunEleven();       //NOT STARTED - Implementing doubly linked list...  (finished code, but stolen for reference) need to redo?
             Chap16_LinearDataStructures.Twelve.RunTwelve();
-            //13
-            //14
-            //15
-            //16
-            //17
-            //18
+            //Chap16_LinearDataStructures.Thirteen.RunThirteen();
+            //Chap16_LinearDataStructures.Fourteen.RunFourteen();
+            //Chap16_LinearDataStructures.Fifteen.RunFifteen();
+            //Chap16_LinearDataStructures.Sixteen.RunSixteen();
+            //Chap16_LinearDataStructures.Seventeen.RunSeventeen();
+            //Chap16_LinearDataStructures.Eighteen.ReunEighteen();
         }
 
     }

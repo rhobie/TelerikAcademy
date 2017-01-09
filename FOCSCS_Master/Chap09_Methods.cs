@@ -25,6 +25,7 @@ namespace FOCSCS_Master
 
         public static class One
         {
+            //1. Write a code that by given name prints on the console "Hello, <name>!" (for example: "Hello, Peter!").
             public static void RunOne()
             {
                 Console.WriteLine();
@@ -55,6 +56,7 @@ namespace FOCSCS_Master
 
         public static class Two
         {
+            //2. Create a method GetMax() with two integer (int) parameters, that returns maximal of the two numbers. Write a program that reads three numbers from the console and prints the biggest of them. Use the GetMax() method you just created. Write a test program that validates that the methods works correctly.
             public static void RunTwo()
             {
                 Console.WriteLine();
@@ -99,6 +101,7 @@ namespace FOCSCS_Master
 
         public static class Three
         {
+            //3. Write a method that returns the English name of the last digit of a given number. Example: for 512 prints "two"; for 1024 -> "four".
             public static void RunThree()
             {
                 Console.WriteLine();
@@ -182,6 +185,7 @@ namespace FOCSCS_Master
 
         public static class Four
         {
+            //4. Write a method that finds how many times certain number can be found in a given array. Write a program to test that the method works correctly.
             public static void RunFour()
             {
                 Console.WriteLine();
@@ -226,6 +230,7 @@ namespace FOCSCS_Master
 
         public static class Five
         {
+            //5. Write a method that checks whether an element, from a certain position in an array is greater than its two neighbors. Test whether the method works correctly.
             public static void RunFive()
             {
                 Console.WriteLine();
@@ -261,6 +266,7 @@ namespace FOCSCS_Master
 
         public static class Six
         {
+            //6. Write a method that returns the position of the first occurrence of an element from an array, such that it is greater than its two neighbors simultaneously. Otherwise the result must be -1.
             public static void RunSix()
             {
                 Console.WriteLine();
@@ -303,6 +309,7 @@ namespace FOCSCS_Master
 
         public static class Seven
         {
+            //7. Write a method that prints the digits of a given decimal number in a reversed order. For example 256, must be printed as 652.
             public static void RunSeven()
             {
                 Console.WriteLine();
@@ -334,6 +341,7 @@ namespace FOCSCS_Master
 
         public static class Eight
         {
+            //8. Write a method that calculates the sum of two very long positive integer numbers. The numbers are represented as array digits and the last digit (the ones) is stored in the array at index 0. Make the method work for all numbers with length up to 10,000 digits.
             //GUIDLELINES:
             //The reader must implement own method that calculates the sum of very big numbers.
             //The digits on position zero will keep the ones; the digit on the first position will keep the
@@ -398,6 +406,7 @@ namespace FOCSCS_Master
 
         public static class Nine
         {
+            //9. Write a method that finds the biggest element of an array. Use that method to implement sorting in descending order.
             public static void RunNine()
             {
                 Console.WriteLine();

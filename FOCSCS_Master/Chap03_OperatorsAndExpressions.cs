@@ -11,22 +11,22 @@ namespace FOCSCS_Master
         //01    -   COMPLETE
         //02    -   COMPLETE
         //03    -   COMPLETE
-        //04    -   
+        //04    -   COMPLETE
         //05    -   COMPLETE
         //06    -   COMPLETE
         //07    -   COMPLETE
         //08    -   COMPLETE
         //09    -   COMPLETE
         //10    -   COMPLETE
-        //11    -   
-        //12    -   
+        //11    -   COMPLETE
+        //12    -   COMPLETE
         //13    -   
         //14    -   
         //15    -   
         //16    -   
 
 
-        //6/16 COMPLETED
+        //11/16 COMPLETED
 
 
         public static class One
@@ -110,7 +110,7 @@ namespace FOCSCS_Master
                 Console.WriteLine();
 
                 Console.WriteLine("Please enter an int, this program will check if the 3rd digit from the right is a 7");
-                int n = GetIntFromConsole();
+                int n = GetInt();
 
                 if ((n / 100) % 10 == 7)
                 {
@@ -126,16 +126,26 @@ namespace FOCSCS_Master
             }
         }
 
-        public static int GetIntFromConsole()
+        public static int GetInt()
         {
-            Console.WriteLine("Enter an int");
-            Console.WriteLine();
-            int entry;
-            string s = Console.ReadLine();
-            Int32.TryParse(s, out entry);
-            Console.WriteLine();
-            return entry;
+            string s;
+            int result;
+            s = Console.ReadLine();
+            while (!Int32.TryParse(s, out result))
+            {
+                if (Int32.TryParse(s, out result))
+                {
+                    break;
+                }
+                else
+                {
+                    Console.WriteLine("Please enter a valid integer");
+                    s = Console.ReadLine();
+                }
+            }
+            return result;
         }
+
         public static class Four
         {
             //03.4. Write an expression that checks whether the third bit in a given integer is 1 or 0.
@@ -145,16 +155,14 @@ namespace FOCSCS_Master
                 Console.WriteLine("03.4. Write an expression that checks whether the third bit in a given integer is 1 or 0.");
                 Console.WriteLine();
 
-                //readline for int
                 Console.WriteLine("enter int to check");
-                int n = GetIntFromConsole();
+                int n = GetInt();
 
-                //NOT SURE HOW TO DO THIS
+                bool isOne = ((n >> 3) & 1) == 1;
 
+                Console.WriteLine("Third bit is a 1: {0}",isOne);
 
-                //bitcheck
-
-                //display results
+                Console.WriteLine("\nCORRECT\n");
             }
         }
         public static class Five
@@ -167,11 +175,11 @@ namespace FOCSCS_Master
                 Console.WriteLine();
 
                 Console.WriteLine("Enter side a");
-                int a = GetIntFromConsole();
+                int a = GetInt();
                 Console.WriteLine("Enter side b");
-                int b = GetIntFromConsole();
+                int b = GetInt();
                 Console.WriteLine("Enter height");
-                int h = GetIntFromConsole();
+                int h = GetInt();
 
                 Console.WriteLine("Surface of trapezoid with given values is:{0}", ((a + b) * h / 2));
 
@@ -188,9 +196,9 @@ namespace FOCSCS_Master
                 Console.WriteLine();
 
                 Console.WriteLine("please enter width of rectangle");
-                int a = GetIntFromConsole();
+                int a = GetInt();
                 Console.WriteLine("please enter height of rectangle");
-                int b = GetIntFromConsole();
+                int b = GetInt();
 
                 Console.WriteLine("Area of rectangle is {0}. The perimeter of the rectangle is {1}", a * b, (a * 2) + (b * 2));
 
@@ -207,7 +215,7 @@ namespace FOCSCS_Master
                 Console.WriteLine();
 
                 Console.WriteLine("Please enter your weight (on earth, whole numbers, and kg)");
-                int earthWeight = GetIntFromConsole();
+                int earthWeight = GetInt();
 
                 Console.WriteLine("Your weight on the moon would be aprox {0}KG", earthWeight * 0.17);
 
@@ -223,8 +231,8 @@ namespace FOCSCS_Master
                 Console.WriteLine(@"03.8. Write an expression that checks for a given point {x, y} if it is within the circle K({0, 0}, R=5). Explanation: the point {0, 0} is the center of the circle and 5 is the radius.");
                 Console.WriteLine();
 
-                int x = GetIntFromConsole();
-                int y = GetIntFromConsole();
+                int x = GetInt();
+                int y = GetInt();
 
                 if ((x * x) + (y * y) <= (5 * 5))
                 {
@@ -248,8 +256,8 @@ namespace FOCSCS_Master
                 Console.WriteLine();
 
 
-                int x = GetIntFromConsole();
-                int y = GetIntFromConsole();
+                int x = GetInt();
+                int y = GetInt();
 
 
                 if (((x * x) + (y * y) <= (5 * 5)) && ((x < -1 && x > 5)) && ((y < 1 && y > 5)))
@@ -279,8 +287,8 @@ namespace FOCSCS_Master
                 Console.WriteLine("- Calculates the sum of the digits (in our example 2+0+1+1 = 4).");
                 Console.WriteLine("- Prints on the console the number in reversed order: dcba (in our example 1102).");
                 Console.WriteLine("- Puts the last digit in the first position: dabc (in our example 1201).");
-                Console.WriteLine("- Exchanges the second and the third digits: acbd (in our example 2101).");
-                Console.WriteLine();
+                Console.WriteLine("- Exchanges the second and the third digits: acbd (in our example 2101).\n");
+
 
                 int n = GetFourDigitIntFromConsole();
 
@@ -297,9 +305,8 @@ namespace FOCSCS_Master
 
                 Console.WriteLine("exchanging the 2nd and third digits gives: {0}{2}{1}{3}", thousands, hundreds, tens, ones);
 
-                Console.WriteLine();
-                Console.WriteLine("CORRECT");
-                Console.WriteLine();
+                Console.WriteLine("\nCORRECT\n");
+
             }
 
 
@@ -327,21 +334,20 @@ namespace FOCSCS_Master
             //03.11. We are given a number n and a position p. Write a sequence of operations that prints the value of the bit on the position p in the number (0 or 1). Example: n=35, p=5 -> 1. Another example: n=35, p=6 -> 0.
             public static void RunEleven()
             {
-                Console.WriteLine();
-                Console.WriteLine("03.11. We are given a number n and a position p. Write a sequence of operations that prints the value of the bit on the position p in the number (0 or 1). Example: n=35, p=5 -> 1. Another example: n=35, p=6 -> 0.");
-                Console.WriteLine();
+                Console.WriteLine("\n03.11. We are given a number n and a position p. Write a sequence of operations that prints the value of the bit on the position p in the number (0 or 1). Example: n=35, p=5 -> 1. Another example: n=35, p=6 -> 0.\n");
 
-                Console.WriteLine("encoding test:");
+                Console.WriteLine("Enter an int for n");
+                int n = GetInt();
+                Console.WriteLine("Enter an int for p");
+                int p = GetInt();
 
-                string msg = "This is my secret message.";
-                string k = "7ecret..cyph3r//qu4y!"; // you can choose another key
-                StringBuilder sb = new StringBuilder();
-                for (int i = 0; i < msg.Length; i++)
-                {
-                    sb.Append((char)(msg[i] ^ k[i % k.Length]));
-                }
-                Console.WriteLine(sb.ToString());
+                int i = 1;
+                int mask = i << p;
+                
 
+                Console.WriteLine("Bit value at positon {0} of {1} is {2}",p,n,(n & mask) != 0 ? 1 : 0);
+
+                Console.WriteLine("\nCORRECT\n");
             }
         }
         public static class Twelve
@@ -349,9 +355,20 @@ namespace FOCSCS_Master
             //03.12. Write a Boolean expression that checks if the bit on position p in the integer v has the value 1. Example v=5, p=1 -> false.
             public static void RunTwelve()
             {
-                Console.WriteLine();
-                Console.WriteLine("03.12. Write a Boolean expression that checks if the bit on position p in the integer v has the value 1. Example v=5, p=1 -> false.");
-                Console.WriteLine();
+                Console.WriteLine("\n03.12. Write a Boolean expression that checks if the bit on position p in the integer v has the value 1. Example v=5, p=1 -> false.\n");
+
+                Console.WriteLine("Enter an int for p");
+                int p = GetInt();
+                Console.WriteLine("Enter an int for v");
+                int v = GetInt();
+
+                int i = 1;
+                int mask = i << p;
+
+                bool isZero = (v & mask) != 0 ? false : true;
+                Console.WriteLine(isZero);
+
+                Console.WriteLine("\nCORRECT\n");
             }
         }
         public static class Thirteen
