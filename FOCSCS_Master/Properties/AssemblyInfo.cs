@@ -8,9 +8,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("FOCSCS_Master")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Accident Compensation Corporation")]
+[assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("FOCSCS_Master")]
-[assembly: AssemblyCopyright("Copyright © Accident Compensation Corporation 2016")]
+[assembly: AssemblyCopyright("Copyright 2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
