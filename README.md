@@ -20,7 +20,7 @@ Exercises from the book 'Fundamentals of Computer Programming with C#'
 |[Chap12 - Exception Handling](/FOCSCS_Master/Chap12_ExceptionHandling.cs)                                          |Incomplete   |0/13 | not started
 |[Chap13 - Strings And Text Processing](/FOCSCS_Master/Chap13_StringsAndTextProcessing.cs)                          |Incomplete   |0/26 | not started
 |[Chap14 - Defining Classes](/FOCSCS_Master/Chap14_DefiningClasses.cs)                                              |Incomplete   |?/?  | started (need to add)
-|[Chap14 - Text Files](/FOCSCS_Master/Chap15_TextFiles.cs)                                                          |Incomplete   |3/?  | started (need to add)
+|[Chap15 - Text Files](/FOCSCS_Master/Chap15_TextFiles.cs)                                                          |Incomplete   |4/13  | started (need to add)
 |[Chap16 - Linear Data Structures](/FOCSCS_Master/Chap16_LinearDataStructures.cs)                                   |Incomplete   |11/18|check numbers
 |[Chap17 - Trees And Graphs](/FOCSCS_Master/Chap17_TreesAndGraphs.cs)                                               |Haven't read |
 |[Chap18 - Dictionaries, Hash-tables and Sets](/FOCSCS_Master/Chap18_DictionariesHash-TablesAndSets.cs)             |Haven't read |
